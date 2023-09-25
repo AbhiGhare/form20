@@ -1,0 +1,61 @@
+<!-- <ul>
+  <li *ngFor="let country of countries">{{ country.name }}</li>
+</ul> -->
+
+<form [formGroup]="form" >
+  <select [formControl]="country" name="country" >
+    <option *ngFor="let country of countries" [value]="[country.shortName]"  >
+      {{ country.name }}
+    </option>
+  </select>
+
+  <select [formControl]="state" name="state" >
+    <option *ngFor="let state of states" [value]="state">
+      {{ state }}
+    </option>
+  </select>
+
+  <select [formControl]="city" name="city" >
+    <option *ngFor="let city of cities" [value]="city">
+      {{ city }}
+    </option>
+  </select>
+
+  <button (click)="allfun()">submit</button>
+</form>
+
+<!-- <div *ngIf="!files.length" class="col-12 rmpm dropzone" appDrag (files)="filesDropped($event)">
+	<div class="text-wrapper">
+		<div class="centered">Drop your file here!</div>
+	</div>
+</div>
+
+<div *ngFor="let file of files">
+  <img *ngIf="file" [src]="file.url" width="100px" height="100px">
+</div>
+
+<button type="button" (click)="upload()">Upload Image</button> -->
+
+
+<p>Country: {{ country.value }}</p>
+  <p>State: {{ state.value }}</p>
+  <p>City: {{ city.value }}</p>
+
+
+  <button (click)="setvalu()">set</button>
+
+
+  <table>
+    <tr>
+      <th>Country</th>
+      <th>State</th>
+      <th>City</th>
+    </tr>
+    <tr *ngFor="let data of table">
+      <td >{{data.country | name}}</td>
+      <td>{{data.state}}</td>
+      <td>{{data.city}}</td>
+    </tr>
+  </table>
+
+  

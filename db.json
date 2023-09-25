@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "data": [
+    {
+      "country": "IN",
+      "state": "Maharashtra",
+      "city": "Kolhapur",
+      "id": 1
+    },
+    {
+      "country": "AW",
+      "state": "Aruba",
+      "city": "Aruba",
+      "id": 2
+    },
+    {
+      "country": "CL",
+      "state": "Tarapaca",
+      "city": "General Lagos",
+      "id": 3
+    },
+    {
+      "country": "IN",
+      "state": "Jharkhand",
+      "city": "Barki Saraiya",
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
